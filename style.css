@@ -1,0 +1,65 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f2f1, #ffffff);
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00796b;
+  }
+  
+  /* Container dos cards */
+  #clima-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Card de cada cidade */
+  .cidade {
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .cidade:hover {
+    transform: translateY(-4px);
+    border-color: #26a69a;
+  }
+  
+  /* Título da cidade */
+  .cidade h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #004d40;
+  }
+  
+  /* Informações do clima */
+  .cidade p {
+    font-size: 1rem;
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+  
+  /* Destaque para dados */
+  strong {
+    color: #00796b;
+  }
+  
+  /* Mensagem de erro
